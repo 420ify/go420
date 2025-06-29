@@ -4,37 +4,60 @@
     <meta charset="UTF-8">
     <meta name="referrer" content="no-referrer">
     <meta http-equiv="refresh" content="2; url=https://420ify.de/">
-    <title>Wird weitergeleitet...</title>
+    <title>Du wirst weitergeleitet...</title>
     <style>
       body {
-        background: #111;
-        color: #fff;
-        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #0e0e0e;
+        color: #ffffff;
+        font-family: 'Segoe UI', sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 100vh;
-        margin: 0;
+        text-align: center;
       }
-      .spinner {
-        margin: 20px 0;
-        width: 40px;
-        height: 40px;
-        border: 4px solid #fff;
-        border-top: 4px solid #00ff94;
+
+      .loader {
+        width: 20px;
+        height: 20px;
+        background-color: #00ff94;
         border-radius: 50%;
-        animation: spin 1s linear infinite;
+        animation: pulse 1.2s infinite ease-in-out;
+        margin: 20px 0;
       }
-      @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.5);
+          opacity: 0.6;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #cccccc;
       }
     </style>
   </head>
   <body>
     <h1>Du wirst weitergeleitet …</h1>
-    <div class="spinner"></div>
-    <p>Bitte einen Moment Geduld.</p>
+    <div class="loader"></div>
+    <p>Einen Moment bitte.</p>
   </body>
 </html>
