@@ -3,61 +3,60 @@
   <head>
     <meta charset="UTF-8">
     <meta name="referrer" content="no-referrer">
-    <meta http-equiv="refresh" content="2; url=https://420ify.de/">
-    <title>Wird weitergeleitet...</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Starter – Infos & Setup</title>
     <style>
       body {
-        margin: 0;
-        padding: 0;
         background-color: #0e0e0e;
         color: #ffffff;
         font-family: 'Segoe UI', sans-serif;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         height: 100vh;
+        margin: 0;
         text-align: center;
+        padding: 20px;
       }
 
       .loader {
-        width: 60px;
-        height: 60px;
-        background-color: #20813c;
+        width: 50px;
+        height: 50px;
+        background-color: #00ff94;
         border-radius: 50%;
         animation: pulse 2.5s ease-in-out infinite;
-        margin: 30px 0;
+        margin-bottom: 30px;
       }
 
       @keyframes pulse {
-        0% {
-          transform: scale(1);
-          opacity: 1;
-        }
-        50% {
-          transform: scale(1.4);
-          opacity: 0.5;
-        }
-        100% {
-          transform: scale(1);
-          opacity: 1;
-        }
+        0% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.4); opacity: 0.5; }
+        100% { transform: scale(1); opacity: 1; }
       }
 
-      h1 {
-        font-size: 1.6rem;
-        margin-bottom: 0.5rem;
-      }
-
-      p {
+      a.button {
+        display: inline-block;
+        background-color: #00ff94;
+        color: #000;
+        padding: 14px 28px;
+        border-radius: 8px;
         font-size: 1.1rem;
-        color: #cccccc;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+      }
+
+      a.button:hover {
+        background-color: #00e285;
+        transform: scale(1.05);
       }
     </style>
   </head>
   <body>
-    <h1>Du wirst weitergeleitet …</h1>
     <div class="loader"></div>
-    <p>Bitte einen Moment Geduld.</p>
+    <h1>Dein Grow-Setup wartet auf dich</h1>
+    <p>Klicke auf den Button, um zur Produktübersicht zu gelangen.</p>
+    <a href="https://420ify.de/" class="button">Jetzt starten</a>
   </body>
 </html>
